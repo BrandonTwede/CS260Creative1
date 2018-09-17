@@ -1,7 +1,8 @@
 function countWords(){
     let text = document.getElementById('input_text_area').value;
     text = text.toLowerCase();
-    text = text.replace(/[.,!?"']/g, "");
+    text = text.replace(/[.,!?"')(]/g, "");
+    text = text.replace(/[\n\t]/g, " ");
     let words = text.split(" ");
     let results = new Object();
     
