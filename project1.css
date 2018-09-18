@@ -8,6 +8,8 @@ body {
 
 input {
     margin-top:30px;
+	width: 376px;
+	border-radius: 25px;
 }
 
 #container {
@@ -28,4 +30,10 @@ input {
 .horizontal_div + .horizontal_div {
     margin-left:50px;
 }
+
+#input_text_area {
+	border-radius: 25px;
+	padding: 6px;
+}
+
 
