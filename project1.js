@@ -1,9 +1,13 @@
 function countWords(){
-    let text = document.getElementById('input_text_area').value;
+    let text = document.getElementById('input_text_area').value.trim();
+    if (text == "") {
+        document.getElementById('list_of_words').innerHTML = "<li>Please type some text in the box!</li>";
+        return;
+    }
     text = text.toLowerCase();
     text = text.replace(/[.,!?"')(]/g, "");
     text = text.replace(/[\n\t]/g, " ");
-    let words = text.split(" ");
+    let words = text.split(/\s+/);
     let results = new Object();
     
     //Count the word occurrances

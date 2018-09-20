@@ -32,8 +32,12 @@ input {
 }
 
 #input_text_area {
-	border-radius: 25px;
+	border-radius: 15px;
 	padding: 6px;
+}
+
+input[type="button"]{
+    height:2em;    
 }
 
 
